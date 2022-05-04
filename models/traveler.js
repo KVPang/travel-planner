@@ -30,4 +30,4 @@ Traveler.init({
     modelName: 'traveler'
 });
 
-Model.exports = Traveler; 
+module.exports = Traveler; 

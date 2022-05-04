@@ -1,6 +1,6 @@
-const Traveler = require("./Traveler.js");
-const Trip = require("./Trip.js");
-const Location = require("./Location.js");
+const Traveler = require('./Traveler');
+const Trip = require('./Trip');
+const Location = require('./Location');
 
 Traveler.hasMany(Trip);
 Trip.belongsTo(Traveler);
