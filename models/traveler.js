@@ -5,10 +5,16 @@ const sequelize = require('../config/connection');
 class Traveler extends Model {}
 
 Traveler.init({
+    id: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+        primaryKey: true,
+        autoIncrement: true
+        },
     name: {
         type: DataTypes.STRING,
         allowNull: false,
-    },
+        },
     email: {
         type: DataTypes.STRING,
         unique: true,
@@ -19,6 +25,7 @@ Traveler.init({
     }
 }, {
     sequelize,
+    freezeTableName: true, 
     timestamps: false
 });
 
