@@ -26,7 +26,8 @@ Traveler.init({
 }, {
     sequelize,
     freezeTableName: true, 
-    timestamps: false
+    timestamps: false,
+    modelName: 'traveler'
 });
 
 Model.exports = Traveler; 
